@@ -1,5 +1,5 @@
 :root{
-    --title-color: #322153;
+    --title-color: #3797FE;
     --primary-color: #34cb79;
 }
 
@@ -10,7 +10,7 @@
 }
 
 html{
-    font-family: Roboto, sans-serif;
+    font-family: 'Rasa', serif;
 }
 
 body {
@@ -23,7 +23,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Rasa', serif;
     color: var(--title-color);
 }
 
