@@ -1,0 +1,28 @@
+{
+  "name": "NLW",
+  "version": "1.0.0",
+  "description": "♻️ Plataforma para cidadãos encontrarem pontos de coleta de lixo seletiva e/ou reciclável e empresas cadastrarem seus pontos de coleta.",
+  "main": "´src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nascimentorapha/Ecoleta.git"
+  },
+  "keywords": [],
+  "author": "Raphael Nascimento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nascimentorapha/Ecoleta/issues"
+  },
+  "homepage": "https://github.com/nascimentorapha/Ecoleta#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
