@@ -1,7 +1,6 @@
 
 #page-home {
-    background: url('../assets/background.png') no-repeat ;
-    background-position: 40vw;
+    background-position: 38vw;
     height: 100vh;
 }
 
@@ -38,75 +37,56 @@
     margin-left: 24px;
     font-weight: normal;
     font-size: 40px;
-    color: #3797FE;
+    color: var(--title-color);
 }
 
 #page-home main{
-    max-width: 560px;
+    max-width: 440px;
+    min-height: 150px;
+    max-height: 450px;
     flex: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* posiciona no meio do height logo após o header*/
+    justify-content: center; /* posiciona no meio do height logo após o header */
 }
 
-#page-home main h1{
+#page-home main .main-content {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -64px;
+}
+
+#page-home main .main-content .main-img img {
+    position: absolute;
+    left: 30vw;
+    bottom: -9vh;
+}
+
+#page-home main .main-content h1{
     max-width: 460px;
     font-size: 38px;
-    color: #383838;
+    color: var(--primary-color);
 }
 
 #page-home main p{
     max-width: 460px;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 34px;
     margin-top: 24px;
-    color: #383838;
+    color: var(--primary-color);
 }
 
-#page-home main a {
-    width: 100%;
-    max-width: 360px;
-    height: 72px;
-    border-radius: 16px;
-
-    display: flex;
-    align-items: center;
-
-    margin-top: 40px;
-    background-color: var(--primary-color);
-
-    transition: 400ms;
-}
-
-#page-home main a:hover {
-    background-color: #2fb86e;
-}
-
-#page-home main a span{
-    width: 72px;
-    height: 72px;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-
-    background-color: rgba(0, 0, 0, 0.08);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#page-home main a span::after {
-    content: "";
-    background-image: url('../assets/search.svg');
-    width: 20px;
-    height: 20px;
-
-}
-
-#page-home main a strong{
-    flex: 1;
-    color: white;
-    text-align: center;
+#page-home main p:last-child{
+    color: var(--title-color);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 /* Switch button dark mode */
