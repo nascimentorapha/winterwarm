@@ -55,14 +55,14 @@ db.serialize(() => {
     // db.run(query, values, afterInsertData)
 
     //Select registry
-    db.all(`SELECT * FROM places`, function(err, rows) {
-        if(err){
-            return console.log(err)
-        }
+    // db.all(`SELECT * FROM places`, function(err, rows) {
+    //     if(err){
+    //         return console.log(err)
+    //     }
 
-        console.log("Aqui estão os seus registros")
-        console.log(rows)
-    } )
+    //     console.log("Aqui estão os seus registros")
+    //     console.log(rows)
+    // } )
 
     //Delete registry
     // db.run(`DELETE FROM places WHERE id = ?`, [1], function(err) {
