@@ -41,9 +41,6 @@
 }
 
 #page-home main{
-    max-width: 440px;
-    min-height: 150px;
-    max-height: 450px;
     flex: 1;
     position: relative;
     display: flex;
@@ -52,17 +49,19 @@
 }
 
 #page-home main .main-content {
-    box-sizing: border-box;
+    margin-top: 64px;
+    min-height: 150px;
+    max-height: 450px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-top: -64px;
+    
+    position: relative;
 }
 
-#page-home main .main-content .main-img img {
-    position: absolute;
-    left: 30vw;
-    bottom: -9vh;
+#page-home main .main-content .main-text {
+    min-width: 400px;
+    position: relative;
 }
 
 #page-home main .main-content h1{
@@ -79,7 +78,7 @@
     color: var(--primary-color);
 }
 
-#page-home main p:last-child{
+#page-home main .main-content .main-text p:last-child{
     color: var(--title-color);
     position: absolute;
     right: 0;
@@ -161,4 +160,88 @@
   
 #page-home header .slider.round:before {
     border-radius: 50%;
+}
+
+#page-home hr {
+    border: 1px solid var(--title-color);
+    border-radius: 2px;
+    width: 800px;
+    margin: 64px auto;
+}
+
+/* SECOND CONTENT */
+
+.second-content {
+    margin: 32px auto;
+    height: 250px;
+}
+
+.second-content .what-donate {
+    width: 270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-content .what-donate h2 {
+    font-size: 36px;
+    margin: auto auto;
+    color: var(--primary-color);
+    margin-left: 16px;
+}
+
+.second-content .what-donate img{
+    height: 80px;
+    width: 80px;
+    color: blue;
+}
+
+.second-content .donations {
+    margin-top: 64px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-content .donations h3 {
+    color: var(--primary-color);
+    font-size: 28px;
+}
+
+.second-content .donations img{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* COLLECT POINTS */
+
+.content-maps {
+    margin: 32px auto;
+    height: 750px;
+}
+
+.content-maps .search-donate-point {
+    width: 470px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-maps .search-donate-point h2 {
+    font-size: 48px;
+    color: var(--primary-color);
+    text-align: center;
+    margin: auto auto;
+}
+
+.content-maps .search-donate-point img {
+    height: 92px;
+    width: 92px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
 }
