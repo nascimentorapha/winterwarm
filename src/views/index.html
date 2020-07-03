@@ -2,29 +2,38 @@
 
 {% set pageID = "page-home" %}
 
+{% block head %}
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8Z82Yjc454i68_E8pinOHkFojdCC7cw0&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./app.js"></script>
+{% endblock head %}
+
 {% block styles %}
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/modal.css">
 {% endblock styles %}
 
+
+
 {% block content %}
     <div class="content">
 
         <header>
-                <div class="header-logo">
-                    <img src="/assets/snowflake.svg" alt="Logomarca">
-                    <h1>WinterWarm</h1>
-                </div>
+            <div class="header-logo">
+                <img src="/assets/snowflake.svg" alt="Logomarca">
+                <h1>WinterWarm</h1>
+            </div>
 
-               
-                   <label class="switch">
-                        <img src="../assets/idea.svg" alt="light" id="body-theme">
-                        <input type="checkbox" name="darkMode">
-                        <span class="slider round"></span>
-                    </label>
-               
-                    
-                
+            <label class="switch">
+                <img src="../assets/idea.svg" alt="light" id="body-theme">
+                <input type="checkbox" name="darkMode">
+                <span class="slider round"></span>
+            </label>
+
         </header>
 
         <main>
@@ -34,18 +43,54 @@
 
                     <p>Sempre há uma pessoa precisando de algo que você tem sobrando em sua casa</p>
 
-                    <p>“O amor é a força mais abstrata, <br>e também a mais potente <br>que há no mundo.” <br>Mahatma Gandhi</p>
-                    
+                    <p>“O amor é a força mais abstrata,
+                        <br>e também a mais potente
+                        <br>que há no mundo.”
+                        <br>Mahatma Gandhi</p>
+
                 </div>
 
                 <div class="main-img">
                     <img src="../assets/background.png" alt="Pessoas agasalhadas">
                 </div>
             </div>
-            
+
+            <hr>
+
+            <div class="second-content">
+                <label class="what-donate">
+                    <img src="../assets/heart.svg" alt="Mão com coração">
+                    <h2>O que doar?</h2>
+                </label>
+
+                <label class="donations">
+                    <div class="donation-1">
+                        <img src="../assets/blanket.svg" alt="Cobertor">
+                        <h3>Cobertores</h3>
+                    </div>
+                    <div class="donation-2">
+                        <img src="../assets/jacket.svg" alt="Agasalho">
+                        <h3>Agasalhos</h3>
+                    </div>
+                </label>
+            </div>
+            <hr>
+
+
+            <div class="content-maps">
+                <label class="search-donate-point">
+                    <img src="../assets/search.svg" alt="Lupa pesquisa">
+                    <h2>Pontos de coleta</h2>
+                </label>
+            </div>
+{#             
+        <div id="map_canvas" style="width:100%; height:100%"></div> #}
+        <div id="map"></div>
+            {# <div id="googleMap" style="width:100%;height:400px;"></div> #}
         </main>
-        
-        <hr>
+
+            
+
 
     </div>
 
@@ -57,4 +102,15 @@
 
 {% block scripts %}
     <script src="/scripts/index.js"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -23.104002, lng: -46.732538 },
+            zoom: 8
+        });
+}
+</script>
+{# <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGXyg2yUuoOXW_1-XJOfvPM_7IdoCRoqY&callback=myMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8Z82Yjc454i68_E8pinOHkFojdCC7cw0&callback=initMap" type="text/javascript"></script> #}
 {% endblock scripts %}
