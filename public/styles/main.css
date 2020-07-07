@@ -35,10 +35,10 @@ h1, h2, h3, h4, h5, h6{
     color: white;
 }
 
-.dark-mode h1 {
-    color: #4d3e6b;
-}
-
-.dark-mode #page-home header a {
-    color: #4d3e6b;
+.dark-mode #page-home main .main-content h1,
+.dark-mode #page-home main .main-content p,
+.dark-mode .second-content .what-donate h2,
+.dark-mode .second-content .donations h3,
+.dark-mode .content-maps .search-donate-point h2{
+    color: #f0f0f5;
 }

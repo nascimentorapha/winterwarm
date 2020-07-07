@@ -219,7 +219,6 @@
 
 .content-maps {
     margin: 32px auto;
-    height: 750px;
 }
 
 .content-maps .search-donate-point {
@@ -244,4 +243,5 @@
 #map {
     height: 500px;
     width: 100%;
+    margin-bottom: 128px;
 }
