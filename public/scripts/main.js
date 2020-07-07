@@ -9,11 +9,11 @@ console.log(ImageTheme)
 checkDarkmode.addEventListener("click", () => {
     if (checkBoxDark.checked) {
         BodyElement.classList.add("dark-mode")
-        ImageTheme.src = '../assets/idea-white.svg'
+        ImageTheme.src = '../assets/sparkle-white.svg'
         console.log(BodyElement)
     }
     else {
         BodyElement.classList.remove("dark-mode")
-        ImageTheme.src = '../assets/idea.svg'
+        ImageTheme.src = '../assets/sparkle.svg'
     }
 })
