@@ -1,14 +1,13 @@
 <p align="center"><img src=".github/preview.png"/></p>
 <h1 align="center">
-    ♻️ Ecoleta 
+    ❄️ WinterWarm 
 </h1>
 
 
- > Find selective garbage and recyclable collection points.
+ > Find collection points to donate blankets and jackets for the winter for those who need.
 
-<p align="center"><img src=".github/index.gif?raw=true"/></p>
-<p align="center"><img src=".github/create.gif?raw=true"/></p>
-<p align="center"><img src=".github/search.gif?raw=true"/></p>
+<p align="center"><img src=".github/landing-page.gif?raw=true"/></p>
+<p align="center"><img src=".github/landing-page-dark.gif?raw=true"/></p>
 
 ---
 
@@ -26,6 +25,7 @@
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Archive/CSS3)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Google Maps API](https://cloud.google.com/maps-platform?hl=pt-br)
 - [Nunjucks](https://mozilla.github.io/nunjucks/templating.html)
 - [NodeJS](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
@@ -39,10 +39,10 @@
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/) (recommended  v12.18.1) installed on your computer. From your command line:
 ```bash
 # Clone this repository
-$ git clone https://github.com/nascimentorapha/ecoleta.git
+$ git clone https://github.com/nascimentorapha/winterwarm.git
 
 # Go into the repository
-$ cd ecoleta
+$ cd winterwarm
 
 # Install dependencies
 $ npm install
@@ -54,7 +54,7 @@ $ npm start
 ---
 ## :eyeglasses: Issues
 
-Feel free to **file a new issue** with a respective title and description on the [Ecoleta](https://github.com/nascimentorapha/Ecoleta/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Best regards, and thank you.
+Feel free to **file a new issue** with a respective title and description on the [WinterWarm](https://github.com/nascimentorapha/winterwarm/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Best regards, and thank you.
 
 ---
 
@@ -69,7 +69,7 @@ Feel free to **file a new issue** with a respective title and description on the
 ---
 
 ## :memo: License
-This project is under the MIT license. See the [LICENSE](https://github.com/nascimentorapha/Ecoleta/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/nascimentorapha/winterwarm/blob/master/LICENSE) for more information.
 
 ---
 
