@@ -13,6 +13,7 @@
 
 ## :pushpin: Table of Contents
 * [Technologies](#globe_with_meridians-technologies)
+* [Design](#pencil2-design)
 * [How to Use](#information_source-how-to-use)
 * [Issues](#eyeglasses-issues)
 * [Contact](#large_blue_diamond-contact)
@@ -31,6 +32,14 @@
 - [Express](https://expressjs.com/pt-br/)
 - [SQLite3](https://www.sqlite.org/index.html)
 - [VS Code](https://code.visualstudio.com/) 
+
+---
+
+## :pencil2: Design
+
+The design of this project was developed on [Figma](https://www.figma.com/), and can be accessed by this [link](https://www.figma.com/file/Tv0bZh7e0wlPDJg81eGXLH/WinterWarm)
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTv0bZh7e0wlPDJg81eGXLH%2FWinterWarm&chrome=DOCUMENTATION" allowfullscreen></iframe>
 
 ---
 
